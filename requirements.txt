@@ -1,0 +1,5 @@
+# Requirements for Vectorless RAG Streamlit Demo
+streamlit
+pageindex
+openai
+requests
