@@ -1,4 +1,4 @@
-# Vectorless RAG Streamlit Demo
+# Vectorless RAG using PageIndex
 
 This project demonstrates a simple Retrieval-Augmented Generation (RAG) workflow **without vectors** using [PageIndex](https://pageindex.ai/) and Streamlit.
 
@@ -14,8 +14,10 @@ This project demonstrates a simple Retrieval-Augmented Generation (RAG) workflow
 
 **Vectorless RAG (PageIndex):**
 - Builds a tree index of the document.
-- Uses LLM to reason over the tree for relevant sections.
 - No vector search or chunking needed.
+- PageIndex creates a tree structure of the document, organizing it hierarchically by sections and subsections
+- Each node in the tree has an ID, title, and summary
+This tree is stored in session state for reuse
 
 ## How to Run
 
