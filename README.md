@@ -20,29 +20,29 @@ This project demonstrates a simple Retrieval-Augmented Generation (RAG) workflow
 This tree is stored in session state for reuse
 
 ## How to Run
-
-1. Install requirements:
+1. Clone git repo
+   ```
+   https://github.com/vivekdeshmukhrepos/vectorless-rag.git
+   ```
+2. Install requirements:
    ```bash
    pip install -r requirements.txt
    ```
 
-2. Set up API keys:
+3. Set up API keys:
    - Open `config.py`
    - Replace the placeholder values with your actual API keys:
      - Get OpenAI API key from [OpenAI](https://platform.openai.com/api-keys)
      - Get PageIndex API key from [PageIndex Dashboard](https://dash.pageindex.ai/api-keys)
 
-3. Run the app:
+4. Run the app:
    ```bash
    streamlit run app.py
    ```
 
-4. Enter a PDF URL and ask a question about the document!
+5. Upload PDF to ask the questions
 
 ## Configuration
 
-API keys are stored in `config.py` and **not shown in the UI**. The `.gitignore` file ensures `config.py` is never committed to version control to protect your API keys.
-
-## Notes
-- This is a minimal demo. For production, handle errors, rate limits, and use async for LLM calls.
-- Do not share your `config.py` file or commit it to version control.
+API keys are stored in `config.py` and **not shown in the UI**. Ensures `config.py` is never committed to version control to protect your API keys.
+ 
